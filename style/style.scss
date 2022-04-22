@@ -140,6 +140,7 @@ body {
     &-title {
         font-size: 30px;
         text-transform: uppercase;
+        font-weight: 400;
         span {
             font-weight: 700;
         }
@@ -204,5 +205,36 @@ body {
         color: $accent;
         font-size: 18px;
         font-weight: 700;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    &-logo {
+        flex: 0 0 40%;
+    }
+    &-nav {
+        flex: 0 0 60%;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+    &-list {
+        list-style-type: none;
+        padding-left: 0;
+        &-title {
+            font-size: 10px;
+            font-weight: 700;
+        }
+        &-item {
+            margin-bottom: 10px;
+        }
+        &-link {
+            color: $grey;
+            text-decoration: none;
+            font-size: 14px;
+        }
     }
 }
