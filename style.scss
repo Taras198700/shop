@@ -1,3 +1,5 @@
+@import 'variables'
+
 $accent:#d7b399;
 $dark:#212121;
 $light:#f9f6f1;
@@ -5,6 +7,7 @@ $grey:#cbcfd4;
 $light-gray:#f4f4f4;
 $dark-gary:#8d8d8d;
 $important:#d84033;
+
 body {
     font-family: 'Montserrat', sans-serif;;
 }
@@ -45,16 +48,22 @@ body {
         color: $dark;
         text-decoration: none;
     }
+    &-info {
+        .nav-item {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
 }
 
 .cart {
     background-image: url(../img/cart.svg);
     padding-left: 45px;
     display: block;
-    width: 30px;
     height: 30px;
     background-repeat: no-repeat;
     background-position: 0 center;
+    padding-right: 0;
     &-count {
         background-image: url(../img/cart-bg.svg);
         background-repeat: no-repeat;
@@ -62,7 +71,7 @@ body {
         color: #fff;
         font-size: 12px;
         font-weight: 700;
-        padding: 10px 24px;
+        padding: 10px 17px 10px 23px;
         display: block;
     }
 }
@@ -130,6 +139,10 @@ body {
             color: $important;
             margin-top: 17px;
         }
+    }
+    &-image {
+        width: 100%;
+        max-width: 556px;
     }
 }
 
