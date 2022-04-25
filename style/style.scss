@@ -381,6 +381,7 @@ nav {
     font-size: 14px;
     @include breakpoint (sm) {
         flex-direction: column;
+        text-align: left;
     }
     &-link {
         color: $dark;
