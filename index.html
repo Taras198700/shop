@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="style/normalize.css">
@@ -27,8 +28,13 @@
                     <li class="nav-item"><a class="nav-link" href="">Payment</a></li>
                     <li class="nav-item"><a class="nav-link" href="">Cart</a></li>
                 </ul>
-                <div class="cart">
+                <button class="cart">
                     <span class="cart-count">5</span>
+                </button>
+                <div class="toggle-menu">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
                 </div>
             </header>
         </div>
@@ -134,5 +140,27 @@
             </footer>
         </div>
     </div>
+    <div class="wrapper">
+        <div class="footer-bottom">
+            <p class="footer-bottom-copyright">Copyright © 2021. All rights reserved</p>
+            <a href="#" class="footer-bottom-link">Privacy policy</a>
+        </div>
+    </div>
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-list-item"><a href="" class="nav-link">Men</a></li>
+            <li class="nav-list-item"><a href="" class="nav-link">For women</a></li>
+            <li class="nav-list-item"><a href="" class="nav-link">For children</a></li>
+            <li class="nav-list-item"><a href="" class="nav-link">Payment</a></li>
+            <li class="nav-list-item"><a href="" class="nav-link">Cart</a></li>
+        </ul>
+    </div>
+    <script>
+        var toggleButton = document.querySelector('.toggle-menu');
+        var navBar = document.querySelector('.nav-bar');
+        toggleButton.addEventListener('click', function () {
+            navBar.classList.toggle('toggle');
+        });
+    </script>
 </body>
 </html>
